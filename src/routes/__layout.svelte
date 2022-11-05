@@ -33,6 +33,7 @@
         background-color: #333438;
         color: white;
         height: 100vh;
+        overflow: hidden;
     }
 
     .border-right-grey {
