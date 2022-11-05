@@ -43,7 +43,7 @@
     <ul class="list-group list-group-flush" transition:slide={{ duration: 300 }}>
         {#each entry[1] as item}
             <li class="list-group-item">
-                <a class="nav-link" href="{item.link}">{item.name}</a>
+                <a class="nav-link" href="{item.link}">{item['name']}</a>
             </li>
         {/each}
     </ul>
