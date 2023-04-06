@@ -1,72 +1,35 @@
 <script lang="ts">
     import Header from "../components/Header.svelte";
-    import SidebarItem from "../components/SidebarItem.svelte";
-    import { t, locale, locales } from "../i18n/i18n";
-    $:data = {
-        [$t("menu.introduction")]: [
-            {
-                name: "Welcome to docs",
-                link: "/welcome"
-            },
-            {
-                name: "Getting Started",
-                link: "/getting-started"
-            },
-            {
-                name: "Quick Setup",
-                link: "/quick-setup"
-            },
-        ],
-        [$t("menu.guides")]: [4, 5, 6, 7, 8, 9, 10, 11],
-        'Litegraph': [12, 24, 42],
-        [$t("menu.engines")]: [
-            {
-                name: "BABYLON",
-                link: "/babylonjs"
-            },
-            {
-                name: "THREE",
-                link: "/threejs"
-            },
-            {
-                name: "VERGE",
-                link: "/verge3d"
-            },
-        ],
-        'UIDL': [11, 12, 23]
-    }
-
+    import Sidebar from "../components/Sidebar.svelte";
 </script>
-<svelte:head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-</svelte:head>
+
 <main class="main-container">
     <div class="row">
-        <div class="col">
+        <div class="col position-fixed bg-main">
             <Header/>
         </div>
     </div>
     <div class="row content-container">
-        <div class="col-2 border-right-grey ">
-            <nav class="p-2">
-                {#each Object.entries(data) as entry}
-                    <SidebarItem {entry}/>
-                {/each}
-            </nav>
+        <div class="col-2 sidebar position-fixed border-right-grey">
+            <Sidebar/>
         </div>
-        <div class="col-10">
-            <div class="container p-2">
+        <div class="col-10 content">
+            <div class="container-sm overflow-y-auto py-2 px-5">
                 <slot />
             </div>
         </div>
     </div>
 </main>
 <style>
+    .bg-main {
+        background-color: #333438;
+    }
     .main-container {
         background-color: #333438;
         color: white;
         height: 100vh;
-        overflow: hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .border-right-grey {
@@ -75,6 +38,13 @@
 
     .content-container {
         height: calc(100% - 60px);
+        margin-top: 60px;
+    }
+    .sidebar {
+        height: 100%;
+    }
+    .content {
+        margin-left: 10rem;
     }
 </style>
 
