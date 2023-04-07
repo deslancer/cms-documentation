@@ -18,41 +18,20 @@
             },
 
         ],
-        [$t("menu.guides")]: [
-            {
-                name: "_",
-                link: "/"
-            },
-            {
-                name: "_",
-                link: "/"
-            },
-            {
-                name: "_",
-                link: "/"
-            },
-            {
-                name: "_",
-                link: "/"
-            },
-            {
-                name: "_",
-                link: "/"
-            },
-        ],
         'Litegraph': [
             {
-                name: "_",
-                link: "/"
+                name: "Essentials",
+                link: "/Litegraph/essentials"
             },
             {
-                name: "_",
-                link: "/"
+                name: "CMS Nodes",
+                link: "/Litegraph/cms-nodes"
             },
             {
-                name: "_",
-                link: "/"
-            }],
+                name: "Core Nodes",
+                link: "/Litegraph/core-nodes"
+            },
+            ],
         [$t("menu.engines")]: [
             {
                 name: "BABYLON",
@@ -86,6 +65,34 @@
                 name: [$t("v.tut1")],
                 link: "/Videos/tutorial1"
             },
+        ],
+        [$t("menu.guides")]: [
+            {
+                name: "_",
+                link: "/"
+            },
+            {
+                name: "_",
+                link: "/"
+            },
+            {
+                name: "_",
+                link: "/"
+            },
+            {
+                name: "_",
+                link: "/"
+            },
+            {
+                name: "_",
+                link: "/"
+            },
+        ],
+        "FAQ": [
+            {
+                name: "Faq",
+                link: "/"
+            }
         ]
     }
 </script>

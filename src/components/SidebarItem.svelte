@@ -4,6 +4,7 @@
     export let entry
     let isOpen = false
     const toggle = () => isOpen = !isOpen
+    let current = '';
 </script>
 <style>
     button {
@@ -31,6 +32,9 @@
     .nav-link:hover {
         color: white;
     }
+    .active {
+        color: #FFB422;
+    }
 </style>
 <button on:click={toggle} aria-expanded={isOpen}>
     {entry[0]}
@@ -43,7 +47,8 @@
     <ul class="list-group list-group-flush" transition:slide={{ duration: 300 }}>
         {#each entry[1] as item}
             <li class="list-group-item">
-                <a class="nav-link" href="{item.link}">{item['name']}</a>
+                <a class="nav-link" class:active="{current === item['name']}"
+                   on:click="{() => current = item['name']}"  href="{item.link}">{item['name']}</a>
             </li>
         {/each}
     </ul>

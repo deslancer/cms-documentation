@@ -5,7 +5,7 @@
 
 <main class="main-container">
     <div class="row">
-        <div class="col position-fixed bg-main">
+        <div class="col position-fixed header">
             <Header/>
         </div>
     </div>
@@ -13,7 +13,7 @@
         <div class="col-2 sidebar position-fixed border-right-grey">
             <Sidebar/>
         </div>
-        <div class="col-10 content">
+        <div class="col-10  content">
             <div class="container-sm overflow-y-auto py-2 px-5">
                 <slot />
             </div>
@@ -21,8 +21,9 @@
     </div>
 </main>
 <style>
-    .bg-main {
+    .header {
         background-color: #333438;
+        z-index: 1000;
     }
     .main-container {
         background-color: #333438;
@@ -42,6 +43,7 @@
     }
     .sidebar {
         height: 100%;
+        z-index: 1000;
     }
     .content {
         margin-left: 10rem;
