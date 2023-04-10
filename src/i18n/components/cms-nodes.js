@@ -2,12 +2,8 @@ export const cmsNodes_en = {
     "cms_nodes.header": "CMS Nodes",
     "cms_nodes.desc": "Here you will find a description of the nodes that are created in the CMS.",
     "cms_nodes.uidl_list": "Represents an abstract list (think about <ul> tag in html) described in UIDL language, has 2 inputs 2 text fields and 1 output (output data in String type)",
-    "cms_nodes.uidl_list_item": `Represents an abstract list item (think about <li> tag in html) described in UIDL language, has 4 inputs 
-(
- children - accepts only an array;
- styles - accepts only an array;
- ) 4 text fields and 1 output (output data in String type)`,
-
+    "cms_nodes.uidl_list_item": `Represents an abstract list item (think about <li> tag in html) described in UIDL language, has 4 inputs 4 text fields and 1 output (output data in String type)`,
+    "cms_nodes.toArray": "Gathers data from inputs and pushes into array, to adding new input use double click"
 
 }
 export const cmsNodes_ru = {

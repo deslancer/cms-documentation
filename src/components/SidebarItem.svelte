@@ -3,8 +3,12 @@
 
     export let entry
     let isOpen = false
-    const toggle = () => isOpen = !isOpen
     let current = '';
+    const toggle = () => {
+        isOpen = !isOpen
+        current = ''
+    }
+
 </script>
 <style>
     button {
@@ -47,8 +51,8 @@
     <ul class="list-group list-group-flush" transition:slide={{ duration: 300 }}>
         {#each entry[1] as item}
             <li class="list-group-item">
-                <a class="nav-link" class:active="{current === item['name']}"
-                   on:click="{() => current = item['name']}"  href="{item.link}">{item['name']}</a>
+                <a class="nav-link" class:active="{current === item.id}"
+                   on:click="{() => current = item.id}"  href="{item.link}">{item.name}</a>
             </li>
         {/each}
     </ul>

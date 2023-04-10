@@ -1,5 +1,6 @@
 <script>
     import {t} from "../../i18n/i18n.js";
+    import Footer from "../../components/Footer.svelte";
 </script>
 
 <div class="container-sm overflow-y-auto">
@@ -11,8 +12,9 @@
     <p class="fs-6 mt-4">{$t("gs.p3")}</p>
     <p class="fs-6 mt-4">{$t("gs.p4")}</p>
     <a href="/Videos/tutorial1">{$t("v.tut1")}</a>
-    <div class="d-flex my-4 justify-content-between">
-        <div class="fst-italic">{$t("g.last_update")} 06.04.2023</div>
-        <div><a href="/Introduction/glossary">{$t("menu.glossary")} &rarr;</a></div>
-    </div>
+    <Footer
+            last_updated="06.04.2023"
+            next_page_link="/Introduction/glossary"
+            next_page_name={$t("menu.glossary")}>
+    </Footer>
 </div>

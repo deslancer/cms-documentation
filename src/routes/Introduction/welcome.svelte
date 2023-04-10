@@ -1,6 +1,7 @@
 <script>
     import {t} from "../../i18n/i18n.js";
     import Prism from "../../components/PrismJS.svelte";
+    import Footer from "../../components/Footer.svelte";
 
     let code_sample = `
     [
@@ -84,8 +85,9 @@
     </ul>
     <p class="fs-6 mt-4">{$t("intro.p9")}</p>
     <Prism language="json" code="{code_sample}" header=""/>
-    <div class="d-flex my-4 justify-content-between">
-        <div class="fst-italic">{$t("g.last_update")} 06.04.2023</div>
-        <div><a href="/Introduction/getting-started">{$t("menu.getting-started")} &rarr;</a></div>
-    </div>
+    <Footer
+            last_updated="06.04.2023"
+            next_page_link="/Introduction/getting-started"
+            next_page_name={$t("menu.getting-started")}>
+    </Footer>
 </div>
