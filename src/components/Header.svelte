@@ -1,10 +1,12 @@
 <script>
     import { t, locale, locales } from "../i18n/i18n";
+    import config from '../config.json'
 </script>
 <nav class="navbar navbar-expand-lg border-grey">
     <div class="container-fluid justify-content-between">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="#">
             <img src="/assets/imgs/ve-logo.svg" alt="logo">
+            <p class="mb-0 mx-4 text-white fw-bold">VisionExp CMS Documentation v. {config.version.major}.{config.version.minor}.{config.version.patch} </p>
         </a>
         <div class="d-flex">
             <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">

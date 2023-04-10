@@ -7,6 +7,7 @@
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "storybook": "start-storybook -p 6006",
+    "prepare": "husky install",
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
@@ -20,6 +21,7 @@
     "@sveltejs/kit": "next",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.3",
+    "husky": "^8.0.3",
     "mdsvex": "^0.10.6",
     "svelte": "^3.45.0",
     "svelte-loader": "^3.1.2",
