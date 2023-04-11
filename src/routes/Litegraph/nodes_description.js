@@ -153,5 +153,26 @@ const nodes_description = [
         "output": ``,
         "behavior": "On button click saves project data and downloads js modules, then shows text field with link"
     },
+    {
+        "name": "On [...event]",
+        "image": "/assets/imgs/triggernode.png",
+        "category": "utilities",
+        "description": "Passes data about which action by which event would be executed on UIDL List Item, connects to UIDL List Item",
+        "inputs": [
+            {
+                "name": "Action",
+                "desc": "- accepts Action nodes;"
+            }
+        ],
+        "fields": [],
+        "output": `
+        {
+        "id":"8SiJIjtkxjkc2F7yEn7we",
+        "event":"...event name",
+        "action": "...function name"
+        }
+        `,
+        "behavior": "default"
+    },
 ]
 export default nodes_description;
