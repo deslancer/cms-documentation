@@ -8,10 +8,8 @@ const c = [
 	() => import("../../src/routes/Litegraph/core-nodes.svelte"),
 	() => import("../../src/routes/Litegraph/essentials.svelte"),
 	() => import("../../src/routes/Litegraph/cms-nodes.svelte"),
-	() => import("../../src/routes/Engines/babylonjs.svelte"),
-	() => import("../../src/routes/Engines/threejs.svelte"),
-	() => import("../../src/routes/Engines/verge3d.svelte"),
 	() => import("../../src/routes/Videos/tutorial1.svelte"),
+	() => import("../../src/routes/Videos/tutorial2.svelte"),
 	() => import("../../src/routes/about.svelte"),
 	() => import("../../src/routes/faq.svelte")
 ];
@@ -40,23 +38,17 @@ export const routes = [
 	// src/routes/Litegraph/cms-nodes.svelte
 	[/^\/Litegraph\/cms-nodes\/?$/, [c[0], c[8]], [c[1]]],
 
-	// src/routes/Engines/babylonjs.svelte
-	[/^\/Engines\/babylonjs\/?$/, [c[0], c[9]], [c[1]]],
-
-	// src/routes/Engines/threejs.svelte
-	[/^\/Engines\/threejs\/?$/, [c[0], c[10]], [c[1]]],
-
-	// src/routes/Engines/verge3d.svelte
-	[/^\/Engines\/verge3d\/?$/, [c[0], c[11]], [c[1]]],
-
 	// src/routes/Videos/tutorial1.svelte
-	[/^\/Videos\/tutorial1\/?$/, [c[0], c[12]], [c[1]]],
+	[/^\/Videos\/tutorial1\/?$/, [c[0], c[9]], [c[1]]],
+
+	// src/routes/Videos/tutorial2.svelte
+	[/^\/Videos\/tutorial2\/?$/, [c[0], c[10]], [c[1]]],
 
 	// src/routes/about.svelte
-	[/^\/about\/?$/, [c[0], c[13]], [c[1]]],
+	[/^\/about\/?$/, [c[0], c[11]], [c[1]]],
 
 	// src/routes/faq.svelte
-	[/^\/faq\/?$/, [c[0], c[14]], [c[1]]]
+	[/^\/faq\/?$/, [c[0], c[12]], [c[1]]]
 ];
 
 // we import the root layout/error components eagerly, so that

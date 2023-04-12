@@ -38,50 +38,21 @@
                 link: "/Litegraph/core-nodes"
             },
             ],
-        [$t("menu.engines")]: [
-            {
-                id: 6,
-                name: "BABYLON",
-                link: "/Engines/babylonjs"
-            },
-            {
-                id: 7,
-                name: "THREE",
-                link: "/Engines/threejs"
-            },
-            {
-                id: 8,
-                name: "VERGE",
-                link: "/Engines/verge3d"
-            },
-        ],
-        'UIDL': [
-            {
-                id: 9,
-                name: "_",
-                link: "/"
-            },
-            {
-                id: 10,
-                name: "_",
-                link: "/"
-            },
-            {
-                id: 11,
-                name: "_",
-                link: "/"
-            }
-        ],
         [$t("menu.videos")]: [
             {
                 id: 12,
                 name: [$t("v.tut1")],
                 link: "/Videos/tutorial1"
             },
+            {
+                id: 13,
+                name: [$t("v.tut2")],
+                link: "/Videos/tutorial2"
+            },
         ],
         [$t("menu.guides")]: [
             {
-                id: 13,
+                id: 14,
                 name: "_",
                 link: "/"
             },

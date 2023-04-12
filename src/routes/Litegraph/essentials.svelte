@@ -93,7 +93,7 @@
         </p>
         <ul class="list-group my-4">
             {#each node_behaviors as behavior}
-                <li class="list-group-item bg-transparent text-white"><span style="color: #FFB422">&escr; {behavior.name} :&nbsp;</span>{behavior.desc}
+                <li class="list-group-item bg-transparent text-white"><span class="font-monospace" style="color: #FFB422">&escr; {behavior.name} :&nbsp;</span>{behavior.desc}
                 </li>
             {/each}
         </ul>
