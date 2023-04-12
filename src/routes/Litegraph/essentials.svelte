@@ -8,7 +8,7 @@
 <div class="container-sm overflow-y-auto">
     <h1>{$t("ge_header")}</h1>
     <p class="fs-6 mt-4">{$t("ge_desc")}</p>
-    <img src="/assets/imgs/lgraph.png" class="img-fluid" alt="litegraph">
+    <img src="/assets/imgs/nodes_essential.png" class="img-fluid" alt="litegraph">
     <div class="my-4">
         <h4 class="fw-bold">Basic node description</h4>
         <ol class="list-group list-group-numbered">
